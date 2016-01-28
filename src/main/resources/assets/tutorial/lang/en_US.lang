@@ -1,2 +1,4 @@
 item.tutorial_item.name=Tutorial Item
 tile.tutorial_block.name=Tutorial Block
+tile.block_properties.white.name=White Property Block
+tile.block_properties.black.name=Black Property Block
