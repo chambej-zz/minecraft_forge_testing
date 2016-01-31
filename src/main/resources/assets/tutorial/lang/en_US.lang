@@ -1,4 +1,9 @@
 item.tutorial_item.name=Tutorial Item
+item.tutorial_sword.name=Tutorial Sword
+item.tutorial_pickaxe.name=Tutorial Pickaxe
+item.tutorial_axe.name=Tutorial Axe
+item.tutorial_hoe.name=Tutorial Hoe
+item.tutorial_spade.name=Tutorial Spade
 tile.tutorial_block.name=Tutorial Block
 tile.block_properties.white.name=White Property Block
 tile.block_properties.black.name=Black Property Block

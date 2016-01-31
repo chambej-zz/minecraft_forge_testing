@@ -16,6 +16,12 @@ public final class ItemRenderRegister {
 
   public static void registerItemRenderer() {
     reg(ModItems.tutorialItem);
+    reg(ModItems.tutorialAxe);
+    reg(ModItems.tutorialHoe);
+    reg(ModItems.tutorialPickaxe);
+    reg(ModItems.tutorialSpade);
+    reg(ModItems.tutorialSword);
+
   }
 
   public static void reg(Item item) {
