@@ -19,6 +19,10 @@ public class ModItems {
   public static ItemModSpade tutorialSpade;
   public static ItemModHoe tutorialHoe;
   public static ItemModMultitool tutorialMultitool;
+  public static ItemModArmor tutorialHelmet;
+  public static ItemModArmor tutorialChestplate;
+  public static ItemModArmor tutorialLeggings;
+  public static ItemModArmor tutorialBoots;
 
   public static void createItems() {
     GameRegistry.registerItem(tutorialItem = new BasicItem("tutorial_item"), "tutorial_item");
@@ -28,6 +32,10 @@ public class ModItems {
     GameRegistry.registerItem(tutorialHoe = new ItemModHoe("tutorial_hoe", TUTORIAL), "tutorial_hoe");
     GameRegistry.registerItem(tutorialSword = new ItemModSword("tutorial_sword", TUTORIAL), "tutorial_sword");
     GameRegistry.registerItem(tutorialMultitool = new ItemModMultitool("tutorial_multitool", TUTORIAL), "tutorial_multitool");
+    GameRegistry.registerItem(tutorialHelmet = new ItemModArmor("tutorial_helmet", TUTORIALA, 1, 0), "tutorial_helmet");
+    GameRegistry.registerItem(tutorialChestplate = new ItemModArmor("tutorial_chestplate", TUTORIALA, 1, 1), "tutorial_chestplate");
+    GameRegistry.registerItem(tutorialLeggings = new ItemModArmor("tutorial_leggings", TUTORIALA, 2, 2), "tutorial_leggings");
+    GameRegistry.registerItem(tutorialBoots = new ItemModArmor("tutorial_boots", TUTORIALA, 1, 3), "tutorial_boots");
   }
 
 }

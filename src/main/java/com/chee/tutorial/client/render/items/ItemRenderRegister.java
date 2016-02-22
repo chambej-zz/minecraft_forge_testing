@@ -22,6 +22,10 @@ public final class ItemRenderRegister {
     reg(ModItems.tutorialSpade);
     reg(ModItems.tutorialSword);
     reg(ModItems.tutorialMultitool);
+    reg(ModItems.tutorialBoots);
+    reg(ModItems.tutorialChestplate);
+    reg(ModItems.tutorialHelmet);
+    reg(ModItems.tutorialLeggings);
 
   }
 
