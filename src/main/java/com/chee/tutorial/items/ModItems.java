@@ -2,6 +2,9 @@ package com.chee.tutorial.items;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemFood;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -23,6 +26,7 @@ public class ModItems {
   public static ItemModArmor tutorialChestplate;
   public static ItemModArmor tutorialLeggings;
   public static ItemModArmor tutorialBoots;
+  public static ItemFood tutorialChocolate;
 
   public static void createItems() {
     GameRegistry.registerItem(tutorialItem = new BasicItem("tutorial_item"), "tutorial_item");
@@ -36,6 +40,11 @@ public class ModItems {
     GameRegistry.registerItem(tutorialChestplate = new ItemModArmor("tutorial_chestplate", TUTORIALA, 1, 1), "tutorial_chestplate");
     GameRegistry.registerItem(tutorialLeggings = new ItemModArmor("tutorial_leggings", TUTORIALA, 2, 2), "tutorial_leggings");
     GameRegistry.registerItem(tutorialBoots = new ItemModArmor("tutorial_boots", TUTORIALA, 1, 3), "tutorial_boots");
+    GameRegistry.registerItem(tutorialChocolate = new ItemModFood("tutorial_chocolate", 2, 0.2f, false,
+            new PotionEffect(Potion.moveSpeed.id, 1200, 1),
+            new PotionEffect(Potion.jump.id, 600, 0),
+            new PotionEffect(Potion.regeneration.id, 200, 1))
+            .setAlwaysEdible(), "tutorial_chocolate");
   }
 
 }
